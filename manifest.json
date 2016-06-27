@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "ZhihuShowFemaleAnswers",
+    "description": "Hide all the answers not from a female user in the question page of Zhihu",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "logo.png"
+    },
+    "content_scripts": [{
+        "matches": [ "https://www.zhihu.com/question/*", "http://www.zhihu.com/question/*" ],
+        "js": [ "jquery-3.0.0.min.js" ]
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
