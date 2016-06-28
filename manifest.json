@@ -3,8 +3,13 @@
 
     "name": "ZhihuShowFemaleAnswers",
     "description": "Hide all the answers not from a female user in the question page of Zhihu",
-    "version": "0.1",
-
+    "version": "1.0.1",
+    "icons": {
+		"128": "logo.png",
+		"64": "logo.png",
+		"32": "logo.png",
+		"16": "logo.png"
+	},
     "browser_action": {
         "default_icon": "logo.png"
     },
